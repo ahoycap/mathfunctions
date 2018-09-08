@@ -13,6 +13,7 @@ function firstOp() {
 function tenpc() {
     var campo = document.getElementById("campo");
     var total = campo.value * 0.1;
+
     if(campo.value == 0 ) {
         alert("Digite um valor válido");
     }else {
