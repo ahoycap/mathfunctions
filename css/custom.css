@@ -125,3 +125,11 @@ main h1 {
     cursor: pointer;
 }
 
+#resposta {
+    bottom: 0;
+    position: absolute;
+    left: 3%;
+    color: #00847c;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}

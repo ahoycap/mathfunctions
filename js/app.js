@@ -13,11 +13,13 @@ function firstOp() {
 function tenpc() {
     var campo = document.getElementById("campo");
     var total = campo.value * 0.1;
+    var arredondado = total.toFixed(2);
+    event.preventDefault();
 
-    if(campo.value == 0 ) {
-        alert("Digite um valor válido");
+    if(campo.value > 0 || campo.value < 0) {
+        document.getElementById("resposta").innerHTML = arredondado;
     }else {
-    alert(total);
-}
+        document.getElementById("resposta").innerHTML = "Digite apenas números";
+    }  
 }
 
