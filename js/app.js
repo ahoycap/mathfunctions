@@ -9,6 +9,7 @@ function firstOp() {
    fop.classList.remove("nodisplay");
 }
 
+
 function tenpc() {
     var campo = document.getElementById("campo");
     var total = campo.value * 0.1;
