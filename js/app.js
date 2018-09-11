@@ -81,7 +81,25 @@ function firstgrau() {
         var raiz = (b/a).toFixed(2);
         document.getElementById("resposta").innerHTML = "A raíz da equação é: " + raiz;
     }
+}
 
+function secondgrau() {
+    var na = document.getElementById("campo6").value;
+    var nb = document.getElementById("campo7").value;
+    var nc = document.getElementById("campo8").value;
+    event.preventDefault();
+    var delta = (Math.pow(nb, 2)) - (4*na*nc);
+
+    if(delta > 0) {
+        var x1 = ((-nb + Math.sqrt(delta))/(2*na)).toFixed(2);
+        var x2 = ((-nb - Math.sqrt(delta))/(2*na)).toFixed(2);
+        document.getElementById("resposta").innerHTML = "As raízes da equação são: x1=" + x1 + " e x2=" +x2;
+    }else if(delta == 0) {
+        var x3 = ((-nb)/(2*a)).toFixed(2);
+        document.getElementById("resposta").innerHTML = "A raíz da equação é: x1=" + x3;
+    }else {
+        documento.getElementById("resposta").innerHTML = "A equação sugerida não possui raízes reais pois o seu delta é igual a zero!"
+    }
 }
 
 
