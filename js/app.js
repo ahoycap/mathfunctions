@@ -24,6 +24,7 @@ function close() {
     clse.classList.add("nodisplay");
 }
 
+// 10% of a number
 function tenpc() {
     var campo = document.getElementById("campo");
     var total = campo.value * 0.1;
@@ -35,6 +36,24 @@ function tenpc() {
     }else{
         document.getElementById("resposta").innerHTML = "Digite apenas números";
     }  
+}
+
+// X% of a number
+function xpc() {
+    var number = document.getElementById("campo1").value;
+    var pct = document.getElementById("campo2").value * 0.01;
+    var total = (number * pct);
+    var arredondado = total.toFixed(2);
+    event.preventDefault();
+
+    if(campo1.value !== 0 && campo2.value !== 0) {
+       
+        document.getElementById("resposta").innerHTML = arredondado;
+    }else{
+        document.getElementById("resposta").innerHTML = "Digite apenas números";
+    } 
+
+
 }
 
 
