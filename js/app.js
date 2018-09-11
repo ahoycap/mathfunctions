@@ -1,4 +1,9 @@
-﻿function operations(evt, opName) {
+﻿/* BUILT BY 
+CÉSAR O. ARAÚJO 
+AND 
+CAIO FERNANDO*/
+
+function operations(evt, opName) {
     // Variables
     var i, tabcontent, tablinks;
 
