@@ -17,7 +17,7 @@ function tenpc() {
 
     if(campo.value > 0 || campo.value < 0) {
         document.getElementById("resposta").innerHTML = arredondado;
-    }else {
+    }else{
         document.getElementById("resposta").innerHTML = "Digite apenas números";
     }  
 }
