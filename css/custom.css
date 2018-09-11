@@ -71,7 +71,7 @@ main h1 {
 
 .form {
   margin: 0 auto;
-  margin-top: 30%;
+  margin-top: 23%;
   border: 1px dashed #00847c;
   width: 300px;
   padding: 30px;
@@ -94,7 +94,7 @@ main h1 {
     cursor: pointer;
     display: block;
     color: #e32b62;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
@@ -106,6 +106,8 @@ main h1 {
     border-radius: 10px;
     outline-style: none;
     padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .form button.btn {
@@ -132,4 +134,26 @@ main h1 {
     color: #00847c;
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
+}
+
+button.active {
+    background: #00847c;
+    color: #FFF;
+}
+
+/* ANIMATIONS */
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+button.tablinks:hover {
+    animation: fadeEffect .3s;
+}
+
+    
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: .3;}
+    to {opacity: 1;}
 }

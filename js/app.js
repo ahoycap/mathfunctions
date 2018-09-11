@@ -1,27 +1,22 @@
-﻿
-function firstOp() {
-   var fop = document.getElementById("dez");
-   fop.classList.remove("nodisplay");
-}
+﻿function operations(evt, opName) {
+    // Variables
+    var i, tabcontent, tablinks;
 
-function secondOp() {
-    var sop = document.getElementById("xporcento");
-    sop.classList.remove("nodisplay");
-}
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
 
-function thirdOp() {
-    var top = document.getElementById("parouimpar");
-    top.classList.remove("nodisplay");
-}
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
 
-function fourthOp() {
-    var foop = document.getElementById("primeirograu");
-    foop.classList.remove("nodisplay");
-}
-
-function fifthOp() {
-    var fiop = document.getElementById("segundograu");
-    fiop.classList.remove("nodisplay");
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(opName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
 
 function close() {
@@ -41,4 +36,6 @@ function tenpc() {
         document.getElementById("resposta").innerHTML = "Digite apenas números";
     }  
 }
+
+
 
