@@ -21,22 +21,57 @@
         <div class="operations">
             <h2>Menu de Operações</h2>
             <button onclick="firstOp()">10%</button>
-            <button>X%</button>
-            <button>Par ou Ímpar?</button>
-            <button>Raíz de 1º Grau</button>
-            <button>Raíz de 2º Grau</button>
+            <button onclick="secondOp()">X%</button>
+            <button onclick="thirdOp()">Par ou Ímpar?</button>
+            <button onclick="fourthOp()">Raíz de 1º Grau</button>
+            <button onclick="fifthOp()">Raíz de 2º Grau</button>
         </div>
 
-        <form id="dez" class="nodisplay">
-            <button onclick="cloose()" id="x">X</button> <br>
+        <form id="dez" class="nodisplay form">
+            <button onclick="close()" id="x">X</button> <br>
+            <label for="dezz">Digite um número: </label><br>
+            <input  id="campo" type="text" name="dezz" placeholder="Ex.: 10"><br>
+            <button onclick="tenpc()" id="calc" class="btn">Calcular!</button>
+        </form>
+
+        <form id="xporcento" class="nodisplay form">
+            <button onclick="close()" id="x">X</button> <br>
             <label for="dezz">Digite um número: </label><br>
             <input  id="campo" type="text" name="dezz" placeholder="Ex.: 100"><br>
+            <label for="dezz">Digite a porcentagem: </label><br>
+            <input  id="campo" type="text" name="dezz" placeholder="Ex.: 20"><br>
+            <button onclick="tenpc()" id="calc" class="btn">Calcular!</button>
+        </form>
+
+        <form id="parouimpar" class="nodisplay form">
+            <button onclick="close()" id="x">X</button> <br>
+            <label for="dezz">Digite um número: </label><br>
+            <input  id="campo" type="text" name="dezz" placeholder="Ex.: 15"><br>
+            <button onclick="tenpc()" id="calc" class="btn">Calcular!</button>
+        </form>
+
+        <form id="primeirograu" class="nodisplay form">
+            <button onclick="close()" id="x">X</button> <br>
+            <label for="dezz">Digite o valor de a: </label><br>
+            <input  id="campo" type="text" name="dezz" placeholder="Ex.: -7"><br>
+            <label for="dezz">Digite o valor de b: </label><br>
+            <input  id="campo" type="text" name="dezz" placeholder="Ex.: 21"><br>
+            <button onclick="tenpc()" id="calc" class="btn">Calcular!</button>
+        </form>
+
+        <form id="segundograu" class="nodisplay form">
+            <button onclick="close()" id="x">X</button> <br>
+            <label for="dezz">Digite o valor de a: </label><br>
+            <input  id="campo" type="text" name="dezz" placeholder="Ex.: 2"><br>
+            <label for="dezz">Digite o valor de b: </label><br>
+            <input  id="campo" type="text" name="dezz" placeholder="Ex.: 4"><br>
+            <label for="dezz">Digite o valor de c: </label><br>
+            <input  id="campo" type="text" name="dezz" placeholder="Ex.: -8"><br>
             <button onclick="tenpc()" id="calc" class="btn">Calcular!</button>
         </form>
 
         <h2 class="ans">Sua resposta é: </h2>
         <p id="resposta"></p>
-
 
     </main>
 </body>

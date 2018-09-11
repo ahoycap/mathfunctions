@@ -1,12 +1,32 @@
-
-function cloose() {
-    var clse = document.getElementById("dez");
-    clse.classList.add("nodisplay");
-} 
-
+﻿
 function firstOp() {
    var fop = document.getElementById("dez");
    fop.classList.remove("nodisplay");
+}
+
+function secondOp() {
+    var sop = document.getElementById("xporcento");
+    sop.classList.remove("nodisplay");
+}
+
+function thirdOp() {
+    var top = document.getElementById("parouimpar");
+    top.classList.remove("nodisplay");
+}
+
+function fourthOp() {
+    var foop = document.getElementById("primeirograu");
+    foop.classList.remove("nodisplay");
+}
+
+function fifthOp() {
+    var fiop = document.getElementById("segundograu");
+    fiop.classList.remove("nodisplay");
+}
+
+function close() {
+    var clse = document.getElementById("dez");
+    clse.classList.add("nodisplay");
 }
 
 function tenpc() {
