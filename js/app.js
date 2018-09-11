@@ -102,8 +102,8 @@ function secondgrau() {
     }else if(delta == 0) {
         var x3 = ((-nb)/(2*a)).toFixed(2);
         document.getElementById("resposta").innerHTML = "A raíz da equação é: x1=" + x3;
-    }else {
-        documento.getElementById("resposta").innerHTML = "A equação sugerida não possui raízes reais pois o seu delta é igual a zero!"
+    }else{
+        document.getElementById("resposta").innerHTML = "A equação sugerida não possui raízes reais pois o seu delta é igual a zero!";
     }
 }
 
