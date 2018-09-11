@@ -71,5 +71,17 @@ function imparoupar() {
     }
 }
 
+function firstgrau() {
+    var a = document.getElementById("campo4").value;
+    var b = document.getElementById("campo5").value;
+    event.preventDefault();
+
+    if (a != 0) {
+        a *= -1;
+        var raiz = (b/a).toFixed(2);
+        document.getElementById("resposta").innerHTML = "A raíz da equação é: " + raiz;
+    }
+
+}
 
 
